@@ -10,10 +10,10 @@
   --dark-color: #010113;
 }
 /* Reset de estilos básicos */
-body, h1, p {
+/* body, h1, p {
   margin: 0;
   padding: 0;
-}
+} */
 /* Estilos generales */
 
 
@@ -29,7 +29,7 @@ body {
 }
 .night {
   z-index: -1;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
