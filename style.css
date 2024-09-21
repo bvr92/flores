@@ -2025,14 +2025,15 @@ h1 {
 .title {
   z-index: 2;
   position: absolute;
-  top: 20px; /* Adjust as needed */
+  top: 20%; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Brush Script MT', cursive; /* Change to any desired font */
   font-size: 3em; /* Adjust size as needed */
-  color: #f8ffc3; /* Color of the text */
+  color: #ff3333; /* Color of the text */
   opacity: 0; /* Start hidden */
   animation: fadeIn 3s ease-in-out forwards; /* Fade in effect */
+  text-align: center;
 }
 
 @keyframes fadeIn {
@@ -2043,7 +2044,9 @@ h1 {
     opacity: 1;
   }
 }
-
+audio{
+	z-index:3;
+}
 #lyrics {
   font-size: 28px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
