@@ -9,8 +9,16 @@
 :root {
   --dark-color: #010113;
 }
+/* Reset de estilos básicos */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+/* Estilos generales */
+
 
 body {
+  font-family: 'Arial', sans-serif;
   display: flex;
   align-items: flex-end;
   justify-content: center;
