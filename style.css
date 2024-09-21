@@ -28,7 +28,8 @@ body {
   perspective: 1000px;
 }
 .night {
-  position: fixed;
+  z-index: -1;
+  position: absolute;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
@@ -2022,19 +2023,23 @@ h1 {
 }
 
 .title {
+  z-index: 2;
   position: absolute;
   top: 20px; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Brush Script MT', cursive; /* Change to any desired font */
   font-size: 3em; /* Adjust size as needed */
-  color: #FF69B4; /* Color of the text */
+  color: #f8ffc3; /* Color of the text */
   opacity: 0; /* Start hidden */
-  animation: fadeIn 2s forwards; /* Fade in effect */
+  animation: fadeIn 3s ease-in-out forwards; /* Fade in effect */
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
   to {
-    opacity: 1; /* Fully visible at the end of the animation */
+    opacity: 1;
   }
 }
