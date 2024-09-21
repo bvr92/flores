@@ -1985,6 +1985,34 @@ body {
 
 
 }
+h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Media Queries para tamaños de pantalla diferentes */
+@media screen and (max-width: 600px) {
+  /* Estilos para pantallas pequeñas */
+  h1 {
+      font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para pantallas medianas */
+  h1 {
+      font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* Estilos para pantallas grandes */
+  h1 {
+      font-size: 2em;
+  }
+}
+
 .title {
   position: absolute;
   top: 20px; /* Adjust as needed */
