@@ -2013,20 +2013,23 @@ h1 {
   }
 }
 
-.title {
+.titulo {
+  margin-bottom: 180px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: yellow;
   position: absolute;
-  top: 20px; /* Adjust as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Brush Script MT', cursive; /* Change to any desired font */
-  font-size: 3em; /* Adjust size as needed */
-  color: #FF69B4; /* Color of the text */
-  opacity: 0; /* Start hidden */
-  animation: fadeIn 2s forwards; /* Fade in effect */
+  font-weight: bold;
+  letter-spacing: 10px;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+  text-align: center;
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
   to {
-    opacity: 1; /* Fully visible at the end of the animation */
+    opacity: 1;
   }
 }
